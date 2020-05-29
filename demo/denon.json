@@ -1,0 +1,11 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "scripts": {
+    "start": "demo.ts"
+  },
+  "allow": [
+    "read",
+    "net"
+  ],
+  "unstable": true
+}
