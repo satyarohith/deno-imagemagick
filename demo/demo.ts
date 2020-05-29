@@ -1,3 +1,5 @@
+/* Copyright Leonel Vieyra https://github.com/leonelv/deno-imagemagick */
+
 import { opine, opineTypes, join, dirname } from "./deps.ts";
 import {
   initializeImageMagick,
