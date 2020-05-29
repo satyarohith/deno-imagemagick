@@ -1,4 +1,5 @@
 /* Copyright Dirk Lemstra https://github.com/dlemstra/Magick.WASM */
+/* Copyright Leonel Vieyra https://github.com/leonelv/deno-imagemagick */
 
 import { describe, it } from "../../utils.ts";
 import { expect, TestFiles } from "../../deps.ts";

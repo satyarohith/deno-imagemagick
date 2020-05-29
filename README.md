@@ -6,7 +6,15 @@ This is a beta, there's a lot of features missing, but is a starting point
 
 ## Example
 
-```javascript
+```typescript
+import {
+  initializeImageMagick,
+  ImageMagick,
+  MagickImage
+} from "https://deno.land/x/deno_imagemagick/mod.ts"
+
+await initializeImageMagick(); // make sure to initialize first!
+
 const lena: Uint8Array = await Deno.readFile('lena.jpg');
 
 ImageMagick.read(lena, (img: MagickImage) => {

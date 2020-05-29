@@ -5,6 +5,7 @@ import {
   MagickImage,
   MagickFormat,
 } from "../mod.ts";
+
 const server = opine.opine();
 
 await initializeImageMagick();
