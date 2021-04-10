@@ -5,16 +5,16 @@ import { Exception } from "../exception/exception.ts";
 import { withString } from "../util/string.ts";
 import { NativeInstance } from "../native-instance.ts";
 import { MagickImage } from "../magick-image.ts";
-import { quantumArray } from "../wasm/magick.js";
+import { quantumArray } from "../wasm/magick.d.ts";
 
 export class PixelCollection extends NativeInstance {
   private readonly image: MagickImage;
 
   private constructor(image: MagickImage) {
-    const instance = Exception.usePointer((exception) => {
+    const instance = Exception.usePointer(exception => {
       return ImageMagick._api._PixelCollection_Create(
         image._instance,
-        exception,
+        exception
       );
     });
     const disposeMethod = ImageMagick._api._PixelCollection_Dispose;
@@ -32,7 +32,7 @@ export class PixelCollection extends NativeInstance {
   /** @internal */
   static _use<TReturnType>(
     image: MagickImage,
-    func: (pixels: PixelCollection) => TReturnType,
+    func: (pixels: PixelCollection) => TReturnType
   ): TReturnType {
     const pixels = new PixelCollection(image);
     try {
@@ -46,11 +46,11 @@ export class PixelCollection extends NativeInstance {
   static _map(
     image: MagickImage,
     mapping: string,
-    func: (instance: number) => void,
+    func: (instance: number) => void
   ): void {
     const pixels = new PixelCollection(image);
     try {
-      pixels.use(0, 0, image.width, image.height, mapping, (instance) => {
+      pixels.use(0, 0, image.width, image.height, mapping, instance => {
         func(instance);
       });
     } finally {
@@ -59,14 +59,14 @@ export class PixelCollection extends NativeInstance {
   }
 
   getArea(x: number, y: number, width: number, height: number): quantumArray {
-    return Exception.usePointer((exception) => {
+    return Exception.usePointer(exception => {
       const instance = ImageMagick._api._PixelCollection_GetArea(
         this._instance,
         x,
         y,
         width,
         height,
-        exception,
+        exception
       );
       const count = width * height * this.image.channelCount;
       return ImageMagick._api.HEAPU8.subarray(instance, instance + count);
@@ -78,14 +78,14 @@ export class PixelCollection extends NativeInstance {
     y: number,
     width: number,
     height: number,
-    mapping: string,
+    mapping: string
   ): Uint8Array | null {
-    return this.use(x, y, width, height, mapping, (instance) => {
+    return this.use(x, y, width, height, mapping, instance => {
       return PixelCollection.createArray(
         instance,
         width,
         height,
-        mapping.length,
+        mapping.length
       );
     });
   }
@@ -94,7 +94,7 @@ export class PixelCollection extends NativeInstance {
     instance: number,
     width: number,
     height: number,
-    channelCount: number,
+    channelCount: number
   ): Uint8Array | null {
     if (instance === 0) {
       return null;
@@ -114,10 +114,10 @@ export class PixelCollection extends NativeInstance {
     width: number,
     height: number,
     mapping: string,
-    func: (instance: number) => TReturnType,
+    func: (instance: number) => TReturnType
   ): TReturnType | null {
-    return withString(mapping, (mappingPtr) => {
-      return Exception.use((exception) => {
+    return withString(mapping, mappingPtr => {
+      return Exception.use(exception => {
         const instance = ImageMagick._api._PixelCollection_ToByteArray(
           this._instance,
           x,
@@ -125,17 +125,20 @@ export class PixelCollection extends NativeInstance {
           width,
           height,
           mappingPtr,
-          exception.ptr,
+          exception.ptr
         );
 
-        return exception.check(() => {
-          const result = func(instance);
-          ImageMagick._api._MagickMemory_Relinquish(instance);
-          return result;
-        }, () => {
-          ImageMagick._api._MagickMemory_Relinquish(instance);
-          return null;
-        });
+        return exception.check(
+          () => {
+            const result = func(instance);
+            ImageMagick._api._MagickMemory_Relinquish(instance);
+            return result;
+          },
+          () => {
+            ImageMagick._api._MagickMemory_Relinquish(instance);
+            return null;
+          }
+        );
       });
     });
   }

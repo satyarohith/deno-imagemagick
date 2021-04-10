@@ -1,6 +1,7 @@
 /* Copyright Dirk Lemstra https://github.com/dlemstra/Magick.WASM */
 
-import MagickNative, { ImageMagickApi } from "./wasm/magick.js";
+import MagickNative from "./wasm/magick.js";
+import type { ImageMagickApi } from "./wasm/magick.d.ts";
 import { MagickImage } from "./magick-image.ts";
 import { withNativeString } from "./util/string.ts";
 
@@ -9,10 +10,10 @@ export class ImageMagick {
   private api?: ImageMagickApi;
 
   private constructor() {
-    this.loader = new Promise((resolve) => {
+    this.loader = new Promise(resolve => {
       MagickNative().then((api: any) => {
-        withNativeString(api, "MAGICK_CONFIGURE_PATH", (name) => {
-          withNativeString(api, "/xml", (value) => {
+        withNativeString(api, "MAGICK_CONFIGURE_PATH", name => {
+          withNativeString(api, "/xml", value => {
             api._Environment_SetEnv(name, value);
             this.api = api;
           });
@@ -33,9 +34,10 @@ export class ImageMagick {
 
   /** @internal */
   static get _api(): ImageMagickApi {
-    if (instance.api === undefined) { // eslint-disable-line @typescript-eslint/no-use-before-define
+    if (instance.api === undefined) {
+      // eslint-disable-line @typescript-eslint/no-use-before-define
       throw new Error(
-        "`await initializeImageMagick` should be called to initialize the library",
+        "`await initializeImageMagick` should be called to initialize the library"
       );
     }
 
@@ -50,18 +52,18 @@ export class ImageMagick {
   static read(fileName: string, func: (image: MagickImage) => void): void;
   static read(
     fileName: string,
-    func: (image: MagickImage) => Promise<void>,
+    func: (image: MagickImage) => Promise<void>
   ): Promise<void>;
   static read(array: Uint8Array, func: (image: MagickImage) => void): void;
   static read(
     array: Uint8Array,
-    func: (image: MagickImage) => Promise<void>,
+    func: (image: MagickImage) => Promise<void>
   ): Promise<void>;
   static read(
     fileNameOrArray: string | Uint8Array,
-    func: (image: MagickImage) => void | Promise<void>,
+    func: (image: MagickImage) => void | Promise<void>
   ): void | Promise<void> {
-    MagickImage._use((image) => {
+    MagickImage._use(image => {
       if (typeof fileNameOrArray === "string") {
         image.read(fileNameOrArray);
       } else {

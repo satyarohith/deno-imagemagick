@@ -1,13 +1,13 @@
 /* Copyright Dirk Lemstra https://github.com/dlemstra/Magick.WASM */
 
 import { ImageMagick } from "../image-magick.ts";
-import { ImageMagickApi } from "../wasm/magick.js";
+import { ImageMagickApi } from "../wasm/magick.d.ts";
 
 /** @internal */
 export function withNativeString<TReturnType>(
   native: ImageMagickApi,
   str: string,
-  func: (instance: number) => TReturnType,
+  func: (instance: number) => TReturnType
 ): TReturnType {
   const length = native.lengthBytesUTF8(str) + 1;
   const instance = native._malloc(length);
@@ -22,7 +22,7 @@ export function withNativeString<TReturnType>(
 /** @internal */
 export function withString<TReturnType>(
   str: string,
-  func: (instance: number) => TReturnType,
+  func: (instance: number) => TReturnType
 ): TReturnType {
   return withNativeString(ImageMagick._api, str, func);
 }

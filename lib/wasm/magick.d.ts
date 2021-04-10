@@ -30,7 +30,7 @@ export interface ImageMagickApi {
   _MagickColor_FuzzyEquals(
     instance: number,
     other: number,
-    fuzz: quantum,
+    fuzz: quantum
   ): number;
   _MagickColor_Initialize(instance: number, value: number): number;
   _MagickColorCollection_DisposeList(list: number): void;
@@ -45,14 +45,14 @@ export interface ImageMagickApi {
     shearY: number,
     translateX: number,
     translateY: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Alpha(
     instance: number,
     x: number,
     y: number,
     paintMethod: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Arc(
     instance: number,
@@ -62,18 +62,18 @@ export interface ImageMagickApi {
     endY: number,
     startDegrees: number,
     endDegrees: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Bezier(
     instance: number,
     coordinates: number,
     length: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_BorderColor(
     instance: number,
     color: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Circle(
     instance: number,
@@ -81,29 +81,29 @@ export interface ImageMagickApi {
     originY: number,
     perimeterX: number,
     perimeterY: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_ClipPath(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_ClipRule(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_ClipUnits(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Color(
     instance: number,
     x: number,
     y: number,
     paintMethod: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Composite(
     instance: number,
@@ -113,12 +113,12 @@ export interface ImageMagickApi {
     height: number,
     compositeOperator: number,
     image: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Density(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Ellipse(
     instance: number,
@@ -128,32 +128,32 @@ export interface ImageMagickApi {
     radiusY: number,
     startDegrees: number,
     endDegrees: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_FillColor(
     instance: number,
     color: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_FillOpacity(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_FillPatternUrl(
     instance: number,
     url: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_FillRule(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Font(
     instance: number,
     fontName: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_FontFamily(
     instance: number,
@@ -161,23 +161,23 @@ export interface ImageMagickApi {
     style: number,
     weight: number,
     stretch: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_FontPointSize(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_FontTypeMetrics(
     instance: number,
     text: number,
     ignoreNewlines: number,
-    exception: number,
+    exception: number
   ): number;
   _DrawingWand_Gravity(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Line(
     instance: number,
@@ -185,7 +185,7 @@ export interface ImageMagickApi {
     startY: number,
     endX: number,
     endY: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathArcAbs(
     instance: number,
@@ -196,7 +196,7 @@ export interface ImageMagickApi {
     rotationX: number,
     useLargeArc: number,
     useSweep: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathArcRel(
     instance: number,
@@ -207,7 +207,7 @@ export interface ImageMagickApi {
     rotationX: number,
     useLargeArc: number,
     useSweep: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathClose(instance: number, exception: number): void;
   _DrawingWand_PathCurveToAbs(
@@ -218,7 +218,7 @@ export interface ImageMagickApi {
     y2: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathCurveToRel(
     instance: number,
@@ -228,52 +228,52 @@ export interface ImageMagickApi {
     y2: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathFinish(instance: number, exception: number): void;
   _DrawingWand_PathLineToAbs(
     instance: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathLineToHorizontalAbs(
     instance: number,
     x: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathLineToHorizontalRel(
     instance: number,
     x: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathLineToRel(
     instance: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathLineToVerticalAbs(
     instance: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathLineToVerticalRel(
     instance: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathMoveToAbs(
     instance: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathMoveToRel(
     instance: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathQuadraticCurveToAbs(
     instance: number,
@@ -281,7 +281,7 @@ export interface ImageMagickApi {
     y1: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathQuadraticCurveToRel(
     instance: number,
@@ -289,7 +289,7 @@ export interface ImageMagickApi {
     y1: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathSmoothCurveToAbs(
     instance: number,
@@ -297,7 +297,7 @@ export interface ImageMagickApi {
     y2: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathSmoothCurveToRel(
     instance: number,
@@ -305,38 +305,38 @@ export interface ImageMagickApi {
     y2: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathSmoothQuadraticCurveToAbs(
     instance: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathSmoothQuadraticCurveToRel(
     instance: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PathStart(instance: number, exception: number): void;
   _DrawingWand_Point(
     instance: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Polygon(
     instance: number,
     coordinates: number,
     length: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Polyline(
     instance: number,
     coordinates: number,
     length: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PopClipPath(instance: number, exception: number): void;
   _DrawingWand_PopGraphicContext(instance: number, exception: number): void;
@@ -344,7 +344,7 @@ export interface ImageMagickApi {
   _DrawingWand_PushClipPath(
     instance: number,
     clipPath: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_PushGraphicContext(instance: number, exception: number): void;
   _DrawingWand_PushPattern(
@@ -354,7 +354,7 @@ export interface ImageMagickApi {
     y: number,
     width: number,
     height: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Rectangle(
     instance: number,
@@ -362,13 +362,13 @@ export interface ImageMagickApi {
     upperLeftY: number,
     lowerRightX: number,
     lowerRightY: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Render(instance: number, exception: number): void;
   _DrawingWand_Rotation(
     instance: number,
     angle: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_RoundRectangle(
     instance: number,
@@ -378,124 +378,124 @@ export interface ImageMagickApi {
     lowerRightY: number,
     cornerWidth: number,
     cornerHeight: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Scaling(
     instance: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_SkewX(instance: number, angle: number, exception: number): void;
   _DrawingWand_SkewY(instance: number, angle: number, exception: number): void;
   _DrawingWand_StrokeAntialias(
     instance: number,
     isEnabled: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_StrokeColor(
     instance: number,
     color: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_StrokeDashArray(
     instance: number,
     dash: number,
     length: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_StrokeDashOffset(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_StrokeLineCap(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_StrokeLineJoin(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_StrokeMiterLimit(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_StrokeOpacity(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_StrokePatternUrl(
     instance: number,
     url: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_StrokeWidth(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Text(
     instance: number,
     x: number,
     y: number,
     text: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_TextAlignment(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_TextAntialias(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_TextDecoration(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_TextDirection(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_TextEncoding(
     instance: number,
     encoding: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_TextInterlineSpacing(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_TextInterwordSpacing(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_TextKerning(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_TextUnderColor(
     instance: number,
     color: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Translation(
     instance: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingWand_Viewbox(
     instance: number,
@@ -503,7 +503,7 @@ export interface ImageMagickApi {
     upperLeftY: number,
     lowerRightX: number,
     lowerRightY: number,
-    exception: number,
+    exception: number
   ): void;
   _PointInfoCollection_Create(length: number): number;
   _PointInfoCollection_Dispose(instance: number): void;
@@ -513,7 +513,7 @@ export interface ImageMagickApi {
     instance: number,
     index: number,
     x: number,
-    y: number,
+    y: number
   ): void;
   _MagickExceptionHelper_Description(instance: number): number;
   _MagickExceptionHelper_Dispose(instance: number): void;
@@ -549,7 +549,7 @@ export interface ImageMagickApi {
   _MagickFormatInfo_GetInfo(
     list: number,
     index: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickFormatInfo_GetInfoByName(name: number, exception: number): number;
   _MagickFormatInfo_Unregister(format: number): void;
@@ -562,7 +562,7 @@ export interface ImageMagickApi {
   _MagickImage_AnimationTicksPerSecond_Get(instance: number): number;
   _MagickImage_AnimationTicksPerSecond_Set(
     instance: number,
-    value: number,
+    value: number
   ): void;
   _MagickImage_BackgroundColor_Get(instance: number): number;
   _MagickImage_BackgroundColor_Set(instance: number, value: number): void;
@@ -571,7 +571,7 @@ export interface ImageMagickApi {
   _MagickImage_BlackPointCompensation_Get(instance: number): number;
   _MagickImage_BlackPointCompensation_Set(
     instance: number,
-    value: number,
+    value: number
   ): void;
   _MagickImage_BorderColor_Get(instance: number): number;
   _MagickImage_BorderColor_Set(instance: number, value: number): void;
@@ -589,7 +589,7 @@ export interface ImageMagickApi {
   _MagickImage_ClassType_Set(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_ColorFuzz_Get(instance: number): number;
   _MagickImage_ColorFuzz_Set(instance: number, value: number): void;
@@ -597,19 +597,19 @@ export interface ImageMagickApi {
   _MagickImage_ColormapSize_Set(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_ColorSpace_Get(instance: number, exception: number): number;
   _MagickImage_ColorSpace_Set(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_ColorType_Get(instance: number, exception: number): number;
   _MagickImage_ColorType_Set(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Compose_Get(instance: number): number;
   _MagickImage_Compose_Set(instance: number, value: number): void;
@@ -634,7 +634,7 @@ export interface ImageMagickApi {
   _MagickImage_HasAlpha_Set(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Height_Get(instance: number): number;
   _MagickImage_Interlace_Get(instance: number): number;
@@ -663,31 +663,31 @@ export interface ImageMagickApi {
   _MagickImage_TotalColors_Get(instance: number, exception: number): number;
   _MagickImage_VirtualPixelMethod_Get(
     instance: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_VirtualPixelMethod_Set(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Width_Get(instance: number): number;
   _MagickImage_AdaptiveBlur(
     instance: number,
     radius: number,
     sigma: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_AdaptiveResize(
     instance: number,
     geometry: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_AdaptiveSharpen(
     instance: number,
     radius: number,
     sigma: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_AdaptiveThreshold(
     instance: number,
@@ -695,21 +695,21 @@ export interface ImageMagickApi {
     height: number,
     bias: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_AddNoise(
     instance: number,
     noiseType: number,
     attenuate: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_AddProfile(
     instance: number,
     name: number,
     datum: number,
     length: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_AffineTransform(
     instance: number,
@@ -719,7 +719,7 @@ export interface ImageMagickApi {
     shearY: number,
     translateX: number,
     translateY: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Annotate(
     instance: number,
@@ -728,80 +728,80 @@ export interface ImageMagickApi {
     boundingArea: number,
     gravity: number,
     angle: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_AnnotateGravity(
     instance: number,
     settings: number,
     text: number,
     gravity: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_AutoGamma(
     instance: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_AutoLevel(
     instance: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_AutoOrient(instance: number, exception: number): number;
   _MagickImage_AutoThreshold(
     instance: number,
     method: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_BlackThreshold(
     instance: number,
     threshold: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_BlueShift(
     instance: number,
     factor: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Blur(
     instance: number,
     radius: number,
     sigma: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Border(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_BrightnessContrast(
     instance: number,
     brightness: number,
     contrast: number,
     channels: number,
-    exception: number,
-  ): void;
+    exception: number
+  ): number;
   _MagickImage_CannyEdge(
     instance: number,
     radius: number,
     sigma: number,
     lower: number,
     upper: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_ChannelOffset(instance: number, channel: number): number;
   _MagickImage_Charcoal(
     instance: number,
     radius: number,
     sigma: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Chop(
     instance: number,
     geometry: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Clahe(
     instance: number,
@@ -809,56 +809,56 @@ export interface ImageMagickApi {
     yTiles: number,
     numberBins: number,
     clipLimit: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Clamp(instance: number, exception: number): void;
   _MagickImage_ClampChannel(
     instance: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Clip(instance: number, exception: number): void;
   _MagickImage_ClipPath(
     instance: number,
     pathName: number,
     inside: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Clone(instance: number, exception: number): number;
   _MagickImage_CloneArea(
     instance: number,
     width: number,
     height: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Clut(
     instance: number,
     clutImage: number,
     method: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_ColorDecisionList(
     instance: number,
     fileName: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Colorize(
     instance: number,
     color: number,
     blend: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_ColorMatrix(
     instance: number,
     kernel: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_ColorThreshold(
     instance: number,
     startColor: number,
     stopColor: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Compare(
     instance: number,
@@ -866,14 +866,14 @@ export interface ImageMagickApi {
     metric: number,
     channels: number,
     distortion: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_CompareDistortion(
     instance: number,
     reference: number,
     metric: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Composite(
     instance: number,
@@ -882,7 +882,7 @@ export interface ImageMagickApi {
     y: number,
     compose: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_CompositeGravity(
     instance: number,
@@ -892,35 +892,35 @@ export interface ImageMagickApi {
     y: number,
     compose: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_ConnectedComponents(
     instance: number,
     connectivity: number,
     objects: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Contrast(
     instance: number,
     enhance: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_ContrastStretch(
     instance: number,
     blackPoint: number,
     whitePoint: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_ConvexHull(
     instance: number,
     length: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Convolve(
     instance: number,
     kernel: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_CopyPixels(
     instance: number,
@@ -928,33 +928,33 @@ export interface ImageMagickApi {
     geometry: number,
     offset: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Crop(
     instance: number,
     geometry: number,
     gravity: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_CropToTiles(
     instance: number,
     geometry: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_CycleColormap(
     instance: number,
     amount: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Decipher(
     instance: number,
     passphrase: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Deskew(
     instance: number,
     threshold: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Despeckle(instance: number, exception: number): number;
   _MagickImage_DetermineColorType(instance: number, exception: number): number;
@@ -964,30 +964,30 @@ export interface ImageMagickApi {
     bestfit: number,
     arguments: number,
     length: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Edge(
     instance: number,
     radius: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Emboss(
     instance: number,
     radius: number,
     sigma: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Encipher(
     instance: number,
     passphrase: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Enhance(instance: number, exception: number): number;
   _MagickImage_Equalize(instance: number, exception: number): void;
   _MagickImage_Equals(
     instance: number,
     reference: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_EvaluateFunction(
     instance: number,
@@ -995,7 +995,7 @@ export interface ImageMagickApi {
     evaluateFunction: number,
     values: number,
     length: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_EvaluateGeometry(
     instance: number,
@@ -1003,20 +1003,20 @@ export interface ImageMagickApi {
     geometry: number,
     evaluateOperator: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_EvaluateOperator(
     instance: number,
     channels: number,
     evaluateOperator: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Extent(
     instance: number,
     geometry: number,
     gravity: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Flip(instance: number, exception: number): number;
   _MagickImage_FloodFill(
@@ -1026,55 +1026,55 @@ export interface ImageMagickApi {
     y: number,
     target: number,
     invert: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Flop(instance: number, exception: number): number;
   _MagickImage_FontTypeMetrics(
     instance: number,
     settings: number,
     ignoreNewLines: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_FormatExpression(
     instance: number,
     settings: number,
     expression: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Frame(
     instance: number,
     geometry: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Fx(
     instance: number,
     expression: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_GammaCorrect(
     instance: number,
     gamma: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_GaussianBlur(
     instance: number,
     radius: number,
     sigma: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_GetArtifact(instance: number, name: number): number;
   _MagickImage_GetAttribute(
     instance: number,
     name: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_GetBitDepth(
     instance: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_GetColormap(instance: number, index: number): number;
   _MagickImage_GetNext(instance: number): number;
@@ -1087,45 +1087,45 @@ export interface ImageMagickApi {
   _MagickImage_Grayscale(
     instance: number,
     method: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_HaldClut(
     instance: number,
     image: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_HasChannel(instance: number, channel: number): number;
   _MagickImage_HasProfile(instance: number, name: number): number;
   _MagickImage_Histogram(
     instance: number,
     length: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_HoughLine(
     instance: number,
     width: number,
     height: number,
     threshold: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Implode(
     instance: number,
     amount: number,
     method: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Kmeans(
     instance: number,
     numberColors: number,
     maxIterations: number,
     tolerance: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Kuwahara(
     instance: number,
     radius: number,
     sigma: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Level(
     instance: number,
@@ -1133,7 +1133,7 @@ export interface ImageMagickApi {
     whitePoint: number,
     gamma: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_LevelColors(
     instance: number,
@@ -1141,7 +1141,7 @@ export interface ImageMagickApi {
     whiteColor: number,
     channels: number,
     invert: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Levelize(
     instance: number,
@@ -1149,52 +1149,52 @@ export interface ImageMagickApi {
     whitePoint: number,
     gamma: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_LinearStretch(
     instance: number,
     blackPoint: number,
     whitePoint: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_LiquidRescale(
     instance: number,
     geometry: number,
     deltaX: number,
     rigidity: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_LocalContrast(
     instance: number,
     radius: number,
     strength: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Magnify(instance: number, exception: number): number;
   _MagickImage_Map(
     instance: number,
     image: number,
     settings: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_MeanShift(
     instance: number,
     width: number,
     height: number,
     colorDistance: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Minify(instance: number, exception: number): number;
   _MagickImage_MinimumBoundingBox(
     instance: number,
     length: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Modulate(
     instance: number,
     modulate: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Moments(instance: number, exception: number): number;
   _MagickImage_Morphology(
@@ -1203,52 +1203,52 @@ export interface ImageMagickApi {
     kernel: number,
     channels: number,
     iterations: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_MotionBlur(
     instance: number,
     radius: number,
     sigma: number,
     angle: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Negate(
     instance: number,
     onlyGrayscale: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Normalize(instance: number, exception: number): void;
   _MagickImage_OilPaint(
     instance: number,
     radius: number,
     sigma: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Opaque(
     instance: number,
     target: number,
     fill: number,
     invert: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_OrderedDither(
     instance: number,
     thresholdMap: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Perceptible(
     instance: number,
     epsilon: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_PerceptualHash(instance: number, exception: number): number;
   _MagickImage_Quantize(
     instance: number,
     settings: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Polaroid(
     instance: number,
@@ -1256,26 +1256,26 @@ export interface ImageMagickApi {
     caption: number,
     angle: number,
     method: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Posterize(
     instance: number,
     levels: number,
     method: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_RaiseOrLower(
     image: number,
     size: number,
     raise: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_RandomThreshold(
     instance: number,
     low: number,
     high: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_RangeThreshold(
     instance: number,
@@ -1283,14 +1283,14 @@ export interface ImageMagickApi {
     low_white: number,
     high_white: number,
     high_black: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_ReadBlob(
     settings: number,
     data: number,
     offset: number,
     length: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_ReadFile(settings: number, exception: number): number;
   _MagickImage_ReadPixels(
@@ -1300,19 +1300,19 @@ export interface ImageMagickApi {
     storageType: number,
     data: number,
     offset: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_ReadStream(
     settings: number,
     reader: number,
     seeker: number,
     teller: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_RegionMask(
     instance: number,
     region: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_RemoveArtifact(instance: number, name: number): void;
   _MagickImage_RemoveAttribute(instance: number, name: number): void;
@@ -1324,46 +1324,46 @@ export interface ImageMagickApi {
     instance: number,
     resolutionX: number,
     resolutionY: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Resize(
     instance: number,
     geometry: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Roll(
     instance: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Rotate(
     instance: number,
     degrees: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_RotationalBlur(
     instance: number,
     angle: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Sample(
     instance: number,
     geometry: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Scale(
     instance: number,
     geometry: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Segment(
     instance: number,
     colorSpace: number,
     clusterThreshold: number,
     smoothingThreshold: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_SelectiveBlur(
     instance: number,
@@ -1371,58 +1371,58 @@ export interface ImageMagickApi {
     sigma: number,
     threshold: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Separate(
     instance: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_SepiaTone(
     instance: number,
     threshold: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_SetAlpha(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_SetArtifact(instance: number, name: number, value: number): void;
   _MagickImage_SetAttribute(
     instance: number,
     name: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_SetBitDepth(
     instance: number,
     channels: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_SetColormap(
     instance: number,
     index: number,
     color: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_SetColorMetric(
     instance: number,
     reference: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_SetNext(image: number, next: number): void;
   _MagickImage_SetProgressDelegate(instance: number, method: number): void;
   _MagickImage_SetReadMask(
     instance: number,
     mask: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_SetWriteMask(
     instance: number,
     mask: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Shade(
     instance: number,
@@ -1430,7 +1430,7 @@ export interface ImageMagickApi {
     elevation: number,
     colorShading: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Shadow(
     instance: number,
@@ -1438,33 +1438,33 @@ export interface ImageMagickApi {
     y: number,
     sigma: number,
     alphaPercentage: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Sharpen(
     instance: number,
     radius: number,
     sigma: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Shave(
     instance: number,
     leftRight: number,
     topBottom: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Shear(
     instance: number,
     xAngle: number,
     yAngle: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_SigmoidalContrast(
     instance: number,
     sharpen: number,
     contrast: number,
     midpoint: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_SparseColor(
     instance: number,
@@ -1472,48 +1472,48 @@ export interface ImageMagickApi {
     method: number,
     arguments: number,
     length: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Spread(
     instance: number,
     method: number,
     radius: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Sketch(
     instance: number,
     radius: number,
     sigma: number,
     angle: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Solarize(
     instance: number,
     factor: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Splice(
     instance: number,
     geometry: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Statistic(
     instance: number,
     type: number,
     width: number,
     height: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Statistics(instance: number, exception: number): number;
   _MagickImage_Stegano(
     instance: number,
     watermark: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Stereo(
     instance: number,
     rightImage: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Strip(instance: number, exception: number): void;
   _MagickImage_SubImageSearch(
@@ -1523,48 +1523,48 @@ export interface ImageMagickApi {
     similarityThreshold: number,
     offset: number,
     similarityMetric: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Swirl(
     instance: number,
     method: number,
     degrees: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Texture(
     instance: number,
     image: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Threshold(
     instance: number,
     threshold: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Thumbnail(
     instance: number,
     geometry: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Tint(
     instance: number,
     opacity: number,
     tint: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Transparent(
     instance: number,
     color: number,
     invert: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_TransparentChroma(
     instance: number,
     colorLow: number,
     colorHigh: number,
     invert: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_Transpose(instance: number, exception: number): number;
   _MagickImage_Transverse(instance: number, exception: number): number;
@@ -1577,7 +1577,7 @@ export interface ImageMagickApi {
     amount: number,
     threshold: number,
     channels: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Vignette(
     instance: number,
@@ -1585,37 +1585,37 @@ export interface ImageMagickApi {
     sigma: number,
     x: number,
     y: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_Wave(
     instance: number,
     method: number,
     amplitude: number,
     length: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_WaveletDenoise(
     instance: number,
     threshold: number,
     softness: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_WhiteThreshold(
     instance: number,
     threshold: number,
     channels: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_WriteBlob(
     instance: number,
     settings: number,
     length: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImage_WriteFile(
     instance: number,
     settings: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImage_WriteStream(
     instance: number,
@@ -1624,78 +1624,78 @@ export interface ImageMagickApi {
     seeker: number,
     teller: number,
     reader: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImageCollection_Append(
     images: number,
     stack: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImageCollection_Coalesce(images: number, exception: number): number;
   _MagickImageCollection_Combine(
     images: number,
     colorSpace: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImageCollection_Complex(
     images: number,
     complexOperator: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImageCollection_Deconstruct(images: number, exception: number): number;
   _MagickImageCollection_Dispose(images: number): void;
   _MagickImageCollection_Evaluate(
     images: number,
     evaluateOperator: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImageCollection_Map(
     images: number,
     settings: number,
     remapImage: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImageCollection_Merge(
     images: number,
     method: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImageCollection_Montage(
     images: number,
     settings: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImageCollection_Morph(
     images: number,
     frames: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImageCollection_Optimize(images: number, exception: number): number;
   _MagickImageCollection_OptimizePlus(
     images: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImageCollection_OptimizeTransparency(
     images: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImageCollection_Polynomial(
     instance: number,
     terms: number,
     length: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImageCollection_Quantize(
     images: number,
     settings: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImageCollection_ReadBlob(
     settings: number,
     data: number,
     offset: number,
     length: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImageCollection_ReadFile(settings: number, exception: number): number;
   _MagickImageCollection_ReadStream(
@@ -1703,18 +1703,18 @@ export interface ImageMagickApi {
     reader: number,
     seeker: number,
     teller: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImageCollection_Smush(
     image: number,
     offset: number,
     stack: number,
-    exception: number,
+    exception: number
   ): number;
   _MagickImageCollection_WriteFile(
     image: number,
     settings: number,
-    exception: number,
+    exception: number
   ): void;
   _MagickImageCollection_WriteStream(
     image: number,
@@ -1723,7 +1723,7 @@ export interface ImageMagickApi {
     seeker: number,
     teller: number,
     reader: number,
-    exception: number,
+    exception: number
   ): void;
   _DoubleMatrix_Create(values: number, order: number): number;
   _DoubleMatrix_Dispose(instance: number): void;
@@ -1750,7 +1750,7 @@ export interface ImageMagickApi {
     progressive: number,
     lossless: number,
     quality: number,
-    exception: number,
+    exception: number
   ): void;
   _JpegOptimizer_CompressStream(
     reader: number,
@@ -1758,7 +1758,7 @@ export interface ImageMagickApi {
     progressive: number,
     lossless: number,
     quality: number,
-    exception: number,
+    exception: number
   ): void;
   _PixelCollection_Create(image: number, exception: number): number;
   _PixelCollection_Dispose(instance: number): void;
@@ -1768,7 +1768,7 @@ export interface ImageMagickApi {
     y: number,
     width: number,
     height: number,
-    exception: number,
+    exception: number
   ): number;
   _PixelCollection_SetArea(
     instance: number,
@@ -1778,7 +1778,7 @@ export interface ImageMagickApi {
     height: number,
     values: number,
     length: number,
-    exception: number,
+    exception: number
   ): void;
   _PixelCollection_ToByteArray(
     instance: number,
@@ -1787,7 +1787,7 @@ export interface ImageMagickApi {
     width: number,
     height: number,
     mapping: number,
-    exception: number,
+    exception: number
   ): number;
   _PixelCollection_ToShortArray(
     instance: number,
@@ -1796,7 +1796,7 @@ export interface ImageMagickApi {
     width: number,
     height: number,
     mapping: number,
-    exception: number,
+    exception: number
   ): number;
   _Quantum_Depth_Get(): number;
   _Quantum_Max_Get(): quantum;
@@ -1861,12 +1861,12 @@ export interface ImageMagickApi {
   _DrawingSettings_TextInterlineSpacing_Get(instance: number): number;
   _DrawingSettings_TextInterlineSpacing_Set(
     instance: number,
-    value: number,
+    value: number
   ): void;
   _DrawingSettings_TextInterwordSpacing_Get(instance: number): number;
   _DrawingSettings_TextInterwordSpacing_Set(
     instance: number,
-    value: number,
+    value: number
   ): void;
   _DrawingSettings_TextKerning_Get(instance: number): number;
   _DrawingSettings_TextKerning_Set(instance: number, value: number): void;
@@ -1879,22 +1879,22 @@ export interface ImageMagickApi {
     shearX: number,
     shearY: number,
     translateX: number,
-    translateY: number,
+    translateY: number
   ): void;
   _DrawingSettings_SetFillPattern(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingSettings_SetStrokeDashArray(
     instance: number,
     value: number,
-    length: number,
+    length: number
   ): void;
   _DrawingSettings_SetStrokePattern(
     instance: number,
     value: number,
-    exception: number,
+    exception: number
   ): void;
   _DrawingSettings_SetText(instance: number, value: number): void;
   _MagickSettings_Create(): number;
@@ -1972,11 +1972,11 @@ export interface ImageMagickApi {
   _ChannelMoments_GetHuInvariants(instance: number, index: number): number;
   _ChannelPerceptualHash_GetHclpHuPhash(
     instance: number,
-    index: number,
+    index: number
   ): number;
   _ChannelPerceptualHash_GetSrgbHuPhash(
     instance: number,
-    index: number,
+    index: number
   ): number;
   _ChannelStatistics_Depth_Get(instance: number): number;
   _ChannelStatistics_Entropy_Get(instance: number): number;
@@ -1997,7 +1997,7 @@ export interface ImageMagickApi {
   _PerceptualHash_GetInstance(
     instance: number,
     list: number,
-    channel: number,
+    channel: number
   ): number;
   _Statistics_DisposeList(list: number): void;
   _Statistics_GetInstance(list: number, channel: number): number;
